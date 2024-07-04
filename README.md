@@ -31,3 +31,12 @@ ImageNet, and ResNet-18 in this case take large datasets of pictures and are tra
 19. Drag and drop the "gym" folder with the model inside (resnet18.onnx) and the gym_data folder with all the training, val, and test images. Now, you are ready to use the model with the video tutorial. Download some images off the internet (of one of the pieces of gym equipment the model was trained on), drag and drop them into my-recognition/gym_data/test and follow along.
 
 [View a video explanation here](https://drive.google.com/file/d/15fmB0E7TFRuXqO7OAEsNwKkkUqXVvwSr/view?usp=drivesdk)
+**Written instructions
+1. Go up a directory into nvidia: cd ..
+2. Navigate into my-recognition: cd my-recognition
+3. Verify that the resnet18.onnx model is inside "gym": ls gym
+4. Next we're going to set the NET and DATASET variables:
+      1. NET = gym
+      2. DATASET = gym_data
+5. Now, we're going to actually run an image through our retrained model: imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/image1.jpg test1.jpg
+6. Done! Now for any image you can copy the command above and just change "image1.jpg" to whatever image you want to classify, and change "test1.jpg" to whatever name you want the classification output to be named as!
