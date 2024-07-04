@@ -1,8 +1,8 @@
-# Project Name
+# Gym Equipment Classification
 
- Add short description of project here > 
+ This project is aimed to help beginners to fitness who want to join a gym and start working out. By using ImageNet and a retrained version of resnet-18, this project classifies several common pieces of gym equipment commenly found in most commercial gyms. This way, anyone with a New Years resolution or simply a keen will to get in shape can do so without as much fear or aprehension as now they have a way of identifying foreign equipment to them, allowing them to then to search online how to use that equipment now that they have its name.
 
-![add image descrition here](direct image link here)
+![Learning Right and Wrong](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP48_Pa0TpCLrywae00zr7EROeEhLgVvg67A&s)
 
 ## The Algorithm
 
