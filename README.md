@@ -39,4 +39,4 @@ ImageNet, and ResNet-18 in this case take large datasets of pictures and are tra
       1. NET=gym
       2. DATASET=gym_data
 5. Now, we're going to actually run an image through our retrained model: imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/image1.jpg test1.jpg
-6. Done! Now for any image you can copy the command above and just change "image1.jpg" to whatever image you want to classify, and change "test1.jpg" to whatever name you want the classification output to be named as!
+6. Done! Now for any image you can copy the command above and just change "image1.jpg" to whatever the name of the image you want to classify is (inside my-recognition/gym_data/test), and change "test1.jpg" to whatever name you want the classification output to be named as!
