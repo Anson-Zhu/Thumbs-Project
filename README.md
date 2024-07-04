@@ -30,4 +30,4 @@ ImageNet, and ResNet-18 in this case take large datasets of pictures and are tra
 18. If you don't have one already, click on the nvidia file at the top and create a new folder called "my-recognition".
 19. Drag and drop the "gym" folder with the model inside (resnet18.onnx) and the gym_data folder with all the training, val, and test images. Now, you are ready to use the model with the video tutorial. Download some images off the internet (of one of the pieces of gym equipment the model was trained on), drag and drop them into my-recognition/gym_data/test and follow along.
 
-[View a video explanation here](video link)
+[View a video explanation here](https://drive.google.com/file/d/15fmB0E7TFRuXqO7OAEsNwKkkUqXVvwSr/view?usp=drivesdk)
