@@ -18,21 +18,21 @@ ImageNet, and ResNet-18 in this case take large datasets of pictures and are tra
 6. Navigate into gym_data and click "new folder" and add a "train", "val", and "test" folder
 7. Then, move the folders of all the images (named "dumb_bell", "bench_press", etc) into the train folder. Then, navigate back to gym_data and then into the "val" folder. In this folder, create new folders to match what is inside the "train" folder (so "dumb_bell", "bench_press", etc). Then take a couple images from each folder in "train" and move them to their corresponding folder in "val". This should only be a few images per file, the vast majority remain in "train".
 8. Navigate back to gym_data, and press "new file". Name this file "labels.txt", and then navigate into it. Within "labels.txt", write one line for each folder within "train", so line 1 would be "aerobic_steppers", line 2 would be "dumb_bells", etc.
-9. Now, navigate up a directory back into "data", and then click on "models". In models, click on "New Folder" and name it "gym".
+9. Now, navigate up back to jetson-inference/python/training/classification, and then cick on "models". In models, click on "New Folder" and name it "gym".
 10. Now, we train! We are working in the terminal now, so within the terminal type: cd jetson-inference
 11. Now that we are inside jetson-inference, run the following command: echo 1 | sudo tee /proc/sys/vm/overcommit_memory (this will overcommit memory, as during training you will likely run out otherwise)
 12. Now, we're going to run the docker. Input into the terminal: ./docker/run.sh
 13. Make sure your text is white now (indicating you are inside the docker), and input: cd python/training/classification
 14. Now, the training command: python3 train.py --model-dir=models/gym data/gym_data --epochs=15 (you can set epochs to whatever you like, but I consider 10 a minimum)
 15. After training has finished, it's time to export the model: python3 onnx_export.py --model-dir=models/gym
-16. Now, looking in jetson-inference/python/training/classification/models/gym and there should now be something named resnet18.onnx (this is your trained model!)
+16. Now, look in jetson-inference/python/training/classification/models/gym and there should now be something named resnet18.onnx (this is your trained model!)
 17. Exit the docker using Ctl + D
 18. If you don't have one already, click on the nvidia file at the top and create a new folder called "my-recognition".
 19. Drag and drop the "gym" folder with the model inside (resnet18.onnx) and the gym_data folder with all the training, val, and test images. Now, you are ready to use the model with the video tutorial. Download some images off the internet (of one of the pieces of gym equipment the model was trained on), drag and drop them into my-recognition/gym_data/test and follow along.
 
 [View a video explanation here](https://drive.google.com/file/d/15fmB0E7TFRuXqO7OAEsNwKkkUqXVvwSr/view?usp=drivesdk)
 **Written instructions
-1. Go up a directory into nvidia: cd ..
+1. In the terminal, go up a directory into nvidia: cd ..
 2. Navigate into my-recognition: cd my-recognition
 3. Verify that the resnet18.onnx model is inside "gym": ls gym
 4. Next we're going to set the NET and DATASET variables:
