@@ -27,5 +27,7 @@ ImageNet, and ResNet-18 in this case take large datasets of pictures and are tra
 15. After training has finished, it's time to export the model: python3 onnx_export.py --model-dir=models/gym
 16. Now, looking in jetson-inference/python/training/classification/models/gym and there should now be something named resnet18.onnx (this is your trained model!)
 17. Exit the docker using Ctl + D
+18. If you don't have one already, click on the nvidia file at the top and create a new folder called "my-recognition".
+19. Drag and drop the "gym" folder with the model inside (resnet18.onnx) and the gym_data folder with all the training, val, and test images. Now, you are ready to use the model with the video tutorial. Download some images off the internet (of one of the pieces of gym equipment the model was trained on), drag and drop them into my-recognition/gym_data/test and follow along.
 
 [View a video explanation here](video link)
