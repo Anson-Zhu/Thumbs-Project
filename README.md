@@ -9,7 +9,8 @@ ImageNet
 ImageNet, and ResNet-18 in this case take large datasets of pictures and are trained to recognize those pictures and classify them based on the categories they were trained on. In this case, I retrained the ResNet-18 model on images of gym equipment, meaning over hundreds of images and several trials it was trained to learn how to differentiate a bench press, dumbell, treadmill, row machine, aerobic stepper, or elliptical. With the trained model, by inputting a relatively isolated picture (one piece of equipment, so as to not clutter the picture) into the retrained ResNet-18 model, the AI can then output the image back to the user with the classification and the confidence (ex- 56.45% Confidence Bench Press).
 
 ## Running this project
-
+**Downloading My Model
+1. Down
 1. Log into your nano.
 2. If you haven't already, go through the steps to download jetson-inference (https://student.idtech.com/courses/331/pages/build-the-project-from-source?module_item_id=26813)
 3. Now, download the following file off of Kaggle and into your computer directly: https://www.kaggle.com/datasets/dutt2302/gym-equipment
