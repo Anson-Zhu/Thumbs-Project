@@ -10,8 +10,8 @@ ImageNet, and ResNet-18 in this case take large datasets of pictures and are tra
 
 ## Running this project
 **Downloading My Model (Quicker)
-1.Log into your nano on VS Code.
-2.  Make sure you are in the root directory and download this repository with this command in the VS Code terminal: git clone https://github.com/Anson-Zhu/Thumbs-Project.git
+1. Log into your nano on VS Code.
+2. Make sure you are in the root directory and download this repository with this command in the VS Code terminal: git clone https://github.com/Anson-Zhu/Thumbs-Project.git
 3. Rename the downloaded directory to "my-recognition"
 4. Also make sure you have jetson-inference. If you don't, follow download steps here: https://student.idtech.com/courses/331/pages/build-the-project-from-source?module_item_id=26813
 5. Skip down to the video tutorial or written instructions for how to use my gym equipment classification model!
